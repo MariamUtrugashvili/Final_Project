@@ -206,7 +206,8 @@ header {
     justify-content: space-between;
 }
 
-.guitarReviews {
+
+.app-guitar-card-review {
     display: flex;
     align-items: center;
     column-gap: 8px;
@@ -267,7 +268,6 @@ header {
 
 .forthSectionForm {
     position: relative;
-
 }
 
 .forthSectionInputButton {
@@ -361,4 +361,139 @@ footer {
     line-height: 24px;
 }
 
- 
+/* catalog */
+/* catalog section 1 */
+
+.catalogSectionOne {
+    border-top: 2px solid #05BCCA;
+    background: #1A1A1A;
+    display: flex;
+    padding: 36px 0;
+    justify-content: center;
+}
+
+.catalogSectionOneButton {
+    background-color: transparent;
+    border: 1px solid #05BCCA;
+    padding: 18px 24px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+}
+
+.active {
+    background: #A1C3C9;
+    color: #2C4246;
+}
+
+/* catalog section 2 */
+.app-catalog-section2 {
+    padding: 96px 94px;
+    background: #012426;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+.app-catalog-section2-filter_sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-catalog-section2-filter_sort-header {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.app-catalog-section2-filter_sort-header-text {
+    color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.app-catalog-section2-sort {
+    display: flex;
+    column-gap: 32px;
+}
+
+.app-catalog-section2-sort-button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #A1C3C9;
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+    border: none;
+}
+
+.app-catalog-section2-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.app-catalog-section2-pages-button {
+    border-radius: 8px;
+    background: #C46A2B;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 16px;
+    border: none;
+}
+
+.app-catalog-section2-pages-next {
+    background: #05BCCA;
+}
+
+.app-catalog-section2-pages-button-text {
+    color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.app-catalog-section2-pages-info {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.app-catalog-section2-cards-container .app-guitar-card {
+    border: none;
+    padding: 0 0 16px 0;
+}
+
+.app-catalog-section2-cards-container .app-guitar-card .app-guitar-card-header{
+    padding-inline: 8px;
+}
+
+.app-catalog-section2-cards-container .app-guitar-card .app-guitar-card-price_reviews{
+    padding-inline: 8px;
+}
+
+.app-catalog-section2-cards-container {
+    display: flex;
+    gap: 40px 20px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+
+.app-guitar-card-header {
+    color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+}
