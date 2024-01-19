@@ -150,7 +150,7 @@ header {
 }
 
 
-/* section 2 */
+/* Section 2 */
 .secondSection {
     background: #012426;
     display: flex;
@@ -197,7 +197,7 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
-/* section 3 */
+/* Section 3 */
 .thirdSection {
     padding: 96px 93px;
     background: #1A1A1A;
@@ -353,7 +353,7 @@ header {
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
 }
 
-/* footer  */
+/* Footer  */
 footer {
     display: flex;
     padding: 48px 21% 64px 21%;
@@ -375,6 +375,14 @@ footer {
     flex-direction: column;
 }
 
+.footerTitle {
+    color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
 .footerTitles {
     position: relative;
 }
@@ -389,13 +397,6 @@ footer {
     color: #007bff;
 }
 
-.footerTitle {
-    color: #D9D9D9;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-}
 
 .footerTitles::after {
     background: #D9D9D9;
@@ -462,7 +463,6 @@ footer {
     line-height: 37px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    /* Add smooth transition */
 }
 
 .guitarTypes:hover {
@@ -470,8 +470,6 @@ footer {
     color: #FFA500;
     box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
 }
-
-
 
 .active {
     background: #A1C3C9;
@@ -519,7 +517,6 @@ footer {
     border: none;
     border-radius: 4px;
     background: #A1C3C9;
-    ;
     padding: 4px 8px;
     display: flex;
     align-items: center;
@@ -543,7 +540,6 @@ footer {
 }
 
 /* Cards*/
-
 .catalogCardContainer .card {
     border: none;
     padding: 0 0 16px 0;
@@ -610,7 +606,6 @@ footer {
 }
 
 /* Pages */
-
 .pages {
     display: flex;
     column-gap: 49px;
