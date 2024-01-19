@@ -15,23 +15,27 @@ header {
     justify-content: space-between;
     background: #012426;
     position: fixed;
+    align-items: center;
     top: 0;
     max-width: inherit;
     width: inherit;
     left: 50%;
     transform: translateX(-50%);
+    left: 50%;
     z-index: 1;
 }
 
-.xLogo, .menuIcon {
+.xLogo,
+.menuIcon {
     display: none;
 }
 
-.headerList{
+.headerList {
     display: flex;
     align-items: center;
-    column-gap: 72px;
+    column-gap: 74px;
 }
+
 
 .headerListItem {
     color: #A1C3C9;
@@ -39,6 +43,21 @@ header {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease, box-shadow 0.3s ease;
+}
+
+.headerListItem:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.logoHeader {
+    width: 100%;
+    height: 100%;
 }
 
 .headerLogo {
@@ -46,9 +65,9 @@ header {
     height: 64px;
 }
 
-.logoHeader {
-    width: 100%;
-    height: 100%;
+.headerLogo:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .headerDetails {
@@ -57,10 +76,18 @@ header {
     column-gap: 32px;
 }
 
-.headerDetails button{
+.headerDetails button {
     border: none;
-    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
     padding: 0;
+    background: transparent;
+}
+
+.headerDetails button:hover {
+    color: #007bff;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
 }
 
 .headerDetails button img {
@@ -82,6 +109,7 @@ header {
 
 .FirstSectionContent {
     display: flex;
+    column-gap: 24px;
     align-items: center;
     column-gap: 24px;
     margin-top: 72px;
@@ -89,10 +117,24 @@ header {
 
 .FirstSectionHeader {
     color: #05BCCA;
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
     font-weight: 400;
     line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+.FirstSectionHeader:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.FirstSectionButton:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .title {
@@ -101,57 +143,63 @@ header {
 
 .FirstSectionButton {
     border-radius: 4px;
-    background: #C46A2B;
     height: 24px;
     padding: 0px 6px;
     border: none;
+    background: #C46A2B;
 }
+
 
 /* section 2 */
 .secondSection {
     background: #012426;
-    padding: 96px 98px;
     display: flex;
     justify-content: center;
+    padding: 96px 98px;
 }
 
 .secondSectionContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     width: 824px;
+    grid-template-columns: repeat(2, 1fr);
 }
-
-/* .app-section2-card-blue {
-    background-image: url(../images/home/mediator1.png);
-}
-
-.app-section2-card-red {
-    background-image: url(../images/home/mediator2.png);
-} */
 
 .secondSectionCard {
+    background-size: cover;
+    position: relative;
     height: 240px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    position: relative;
+}
+
+.secondSectionCard img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondSectionCard:hover img {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+
+.secondSectionCard:hover .SecondSectionTitle {
+    display: none;
 }
 
 .SecondSectionTitle {
     position: absolute;
     top: 16px;
-    left: 16px;
-    color: #F5F5F5;
-    font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 37px;
+    left: 16px;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
 }
 
 /* section 3 */
 .thirdSection {
-    padding: 96px 94px;
+    padding: 96px 93px;
     background: #1A1A1A;
     display: flex;
     flex-direction: column;
@@ -162,17 +210,18 @@ header {
 
 .thirdSectionMainTitle {
     color: #05BCCA;
+    font-weight: 700;
+    line-height: 52px;
     font-family: 'Inter', sans-serif;
     font-size: 36px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
 }
 
 .thirdSectionContainer {
     display: flex;
     column-gap: 20px;
 }
+
 
 .thirdSectionCard {
     border: 1px solid #05BCCA;
@@ -184,33 +233,39 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
 }
 
-.thirdSectionCardimg {
-    width: 100%;
-    height: 100%;   
+/* Add a blue box-shadow effect around the entire card on hover */
+.thirdSectionCard:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
 }
+
+/* Hide the blue line under "Most Popular"  */
+.thirdSectionMainTitle {
+    transition: border-bottom 0.3s ease;
+}
+
+.thirdSectionMainTitle:hover {
+    border-bottom: 2px solid #007bff;
+}
+
 
 .thirdSectionTitle {
     color: #D9D9D9;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
     font-weight: 700;
     line-height: 27px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
+
 
 .guitarReviews {
+    align-items: center;
     display: flex;
     width: 100%;
-    align-items: center;
     justify-content: space-between;
-}
-
-
-.app-guitar-card-review {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
 }
 
 .reviewText {
@@ -220,6 +275,12 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 15px;
+}
+
+.starsReview {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
 }
 
 .thirdSectionPrice {
@@ -234,12 +295,12 @@ header {
 .forthSection {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    height: 320px;
-    background-image: url(../images/home/pic2\ \(2\).png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    row-gap: 40px;
+    height: 320px;
+    background-image: url(../images/home/pic2\ \(2\).png);
     align-items: center;
     justify-content: center;
 }
@@ -250,6 +311,11 @@ header {
     font-size: 32px;
     font-weight: 700;
     line-height: 19px;
+}
+
+
+.forthSectionForm {
+    position: relative;
 }
 
 .forthSectionInput {
@@ -266,13 +332,12 @@ header {
     line-height: 19px;
 }
 
-.forthSectionForm {
-    position: relative;
-}
 
 .forthSectionInputButton {
     position: absolute;
     border-radius: 0px 8px 8px 0px;
+    border: none;
+    right: 0;
     background: #05BCCA;
     padding: 15px 14px 14px 14px;
     color: #FFF;
@@ -280,30 +345,48 @@ header {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
-    border: none;
-    right: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forthSectionInputButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
 }
 
 /* footer  */
 footer {
     display: flex;
+    padding: 48px 21% 64px 21%;
+    row-gap: 64px;
     flex-direction: column;
     align-items: center;
     background: #2C4246;
-    padding: 48px 21% 64px 21%;
-    row-gap: 64px;
 }
 
 .footerContainer {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .footerDiv {
     display: flex;
-    flex-direction: column;
     row-gap: 28px;
+    flex-direction: column;
+}
+
+.footerTitles {
+    position: relative;
+}
+
+.footerItems li a,
+.footerList li a {
+    transition: color 0.3s ease;
+}
+
+.footerItems li a:hover,
+.footerList li a:hover {
+    color: #007bff;
 }
 
 .footerTitle {
@@ -314,24 +397,20 @@ footer {
     line-height: 32px;
 }
 
-.footerTitles {
-    position: relative;
-}
-
 .footerTitles::after {
-    content: "";
-    width: 80px;
-    height: 2px;
     background: #D9D9D9;
     position: absolute;
     left: 0;
-    top: 36px;
+    content: "";
+    top: 37px;
+    width: 80px;
+    height: 3px;
 }
 
 .footerList {
     display: flex;
-    flex-direction: column;
     row-gap: 8px;
+    flex-direction: column;
 }
 
 .footerItemTitles {
@@ -361,10 +440,10 @@ footer {
     line-height: 24px;
 }
 
-/* catalog */
-/* catalog section 1 */
 
-.catalogSectionOne {
+/* კატალოგი */
+
+.catalogFirstSection {
     border-top: 2px solid #05BCCA;
     background: #1A1A1A;
     display: flex;
@@ -372,44 +451,42 @@ footer {
     justify-content: center;
 }
 
-.catalogSectionOneButton {
-    background-color: transparent;
+.guitarTypes {
+    background-color: #0a0a0a;
     border: 1px solid #05BCCA;
     padding: 18px 24px;
-    color: #FFF;
+    color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 37px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Add smooth transition */
 }
+
+.guitarTypes:hover {
+    background-color: #1A1A1A;
+    color: #FFA500;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+}
+
+
 
 .active {
     background: #A1C3C9;
     color: #2C4246;
 }
 
-/* catalog section 2 */
-.app-catalog-section2 {
-    padding: 96px 94px;
-    background: #012426;
-    display: flex;
-    flex-direction: column;
-    row-gap: 64px;
-}
 
-.app-catalog-section2-filter_sort {
+/* მეორე სექცია */
+.catalogFilter {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.app-catalog-section2-filter_sort-header {
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
-}
-
-.app-catalog-section2-filter_sort-header-text {
+.filterText {
     color: #D9D9D9;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
@@ -417,43 +494,151 @@ footer {
     line-height: 32px;
 }
 
-.app-catalog-section2-sort {
-    display: flex;
-    column-gap: 32px;
+.filterButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    transition: all .3s linear;
 }
 
-.app-catalog-section2-sort-button {
-    padding: 4px 8px;
+.catalogSort,
+.filterContainer {
+    display: flex;
+    align-items: center;
+}
+
+.catalogSort {
+    column-gap: 30px;
+}
+
+.filterContainer {
+    column-gap: 16px;
+}
+
+.sortButton {
+    border: none;
     border-radius: 4px;
     background: #A1C3C9;
+    ;
+    padding: 4px 8px;
     display: flex;
     align-items: center;
-    column-gap: 33px;
-    border: none;
+    gap: 33px;
 }
 
-.app-catalog-section2-pages {
+.sortButton span {
+    color: #2C4246;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.catalogSecondSection {
+    padding: 96px 94px;
+    background: #012426;
     display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+/* Cards*/
+
+.catalogCardContainer .card {
+    border: none;
+    padding: 0 0 16px 0;
+}
+
+/* Catalog Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(12, 109, 213, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogCardContainer .card .guitarName {
+    padding-inline: 8px;
+}
+
+.catalogCardContainer .card .guitarPrice {
+    padding-inline: 8px;
+}
+
+.catalogCardContainer {
+    display: flex;
+    gap: 40px 20px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.guitarName {
+    color: #D9D9D9;
+    font-weight: 700;
+    line-height: 27px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.reviewStars {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.reviewStars {
+    color: #A1C3C9;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.cardReviews {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+
+.price {
+    color: #05BCCA;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/* Pages */
+
+.pages {
+    display: flex;
+    column-gap: 49px;
     justify-content: center;
     align-items: center;
-    column-gap: 48px;
 }
 
-.app-catalog-section2-pages-button {
+.buttonPage {
+    padding: 9px;
+    align-items: center;
     border-radius: 8px;
     background: #C46A2B;
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    gap: 16px;
     border: none;
+    display: flex;
+    gap: 16px;
 }
 
-.app-catalog-section2-pages-next {
+/* Pages Hover Effect */
+.buttonPage:hover {
+    background-color: #012426;
+    color: #ffffff;
+}
+
+.next {
     background: #05BCCA;
 }
 
-.app-catalog-section2-pages-button-text {
+.buttonText {
     color: #D9D9D9;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -461,7 +646,7 @@ footer {
     line-height: 24px;
 }
 
-.app-catalog-section2-pages-info {
+.pagesCount {
     color: #FFF;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -469,31 +654,236 @@ footer {
     line-height: 24px;
 }
 
-.app-catalog-section2-cards-container .app-guitar-card {
-    border: none;
-    padding: 0 0 16px 0;
-}
 
-.app-catalog-section2-cards-container .app-guitar-card .app-guitar-card-header{
-    padding-inline: 8px;
-}
-
-.app-catalog-section2-cards-container .app-guitar-card .app-guitar-card-price_reviews{
-    padding-inline: 8px;
-}
-
-.app-catalog-section2-cards-container {
+/* Contact */
+.contactContainer {
+    background: url(../images/shared/contactCover.png), lightgray 50%;
+    background-repeat: no-repeat;
+    padding: 96px 95px 115px 0;
+    background-size: cover;
+    background-position: right;
     display: flex;
-    gap: 40px 20px;
-    justify-content: center;
-    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+
+.contactDiv {
+    flex-direction: column;
+    row-gap: 40px;
+    width: 620px;
+    display: flex;
+}
+
+.contactQuestion {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.info {
+    padding: 35px 40px;
+    background: #2C4246;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+}
+
+.info::before {
+    position: absolute;
+    width: 3px;
+    height: 0%;
+    content: "";
+    background: #A1C3C9;
+    left: 0;
+    top: 0;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.infoContentDetails i {
+    font-size: 24px;
+    color: #D9D9D9;
 }
 
 
-.app-guitar-card-header {
+.infoContentDetails {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.infoContentDetails span {
     color: #D9D9D9;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 27px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.inputFormContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.infoInputTitles {
+    display: flex;
+    column-gap: 8px;
+}
+
+
+.contactPlaforms {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.contactPlaformsMiniIcons {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 16px;
+}
+
+.contactPlaformsMiniIcons a {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.contactPlaformsMiniIcons a:hover {
+    transform: scale(1.3);
+}
+
+.contactPlaformsMiniIcons a img {
+    width: 100%;
+    height: 100%;
+}
+
+.inputField,
+.writingSpace {
+    background: #2C4246;
+    color: #A1C3C9;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    padding: 6px 8px;
+}
+
+.inputField {
+    width: 55%;
+}
+
+.writingSpace {
+    align-items: center;
+    resize: none;
+    height: 103px;
+    margin-bottom: 8px;
+}
+
+.sendButton span {
+    position: relative;
+}
+
+.sendButton span::after {
+    content: "SEND MESSAGE";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0%;
+}
+
+.sendButton {
+    padding: 8px 16px;
+    border: none;
+    background: #C46A2B;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sendButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.sendButton:hover::before {
+    left: 0;
+}
+
+.sendButton span {
+    z-index: 1;
+}
+
+/* for Email and Phone Icons */
+.infoContentDetails:hover {
+    color: #FFA500; 
+    transform: scale(1.2); 
+}
+
+/* Map Icon */
+.info a:hover img {
+    filter: brightness(1.5); 
+    transform: rotate(15deg); 
+}
+
+
+/* Hover Styles for the Button */
+.sendButton:hover {
+    background: #1A1A1A; 
+    color: #FFA500; 
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+.infoContentDetails:hover {
+    color: #FFA500; 
+}
+
+/* Hover Effect for Input Fields */
+.inputField:hover {
+    background-color: #001F3F; 
+    color: #ffffff; 
+    border-color: #007BFF; 
+}
+/*  for Message  */
+.writingSpace:hover {
+    background-color: #001F3F; 
+    color: #ffffff; 
+    border-color: #007BFF; 
+}
+
+.info:hover {
+    background-color: #001F3F; 
+    color: #ffffff; 
+    border-color: #007BFF; 
+}
+
+iframe {
+    width: 100%;
 }

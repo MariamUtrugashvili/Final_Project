@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/laptop.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <title>Project</title>
+    <script src="https://kit.fontawesome.com/1c228abca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="icon" href="images/shared/logo.svg" type="image/x-icon" />
+    <title>Home</title>
 </head>
 
 <body>
     <!-- container -->
     <div class="container">
-
         <!-- header -->
         <header>
             <nav class="headerNav">
@@ -33,7 +32,7 @@
                 <img src="images/shared/xmark.svg" class="app-header-xIcon" alt="x Icon">
             </a>
 
-            <a class="headerLogo">
+            <a href="index.html" class="headerLogo">
                 <img alt="logo" src="images/shared/logo.svg" class="logoHeader">
             </a>
 
@@ -67,15 +66,15 @@
             <div class="secondSectionContainer">
                 <div class="secondSectionCard bluePick">
                     <h2 class="SecondSectionTitle">Classical Guitar</h2>
-                    <img  src="images/home/BluePick.png" alt="Blue Pick">
+                    <img src="images/home/BluePick.png" alt="Blue Pick">
                 </div>
                 <div class="secondSectionCard orangePick">
                     <h2 class="SecondSectionTitle">Acoustic Guitar</h2>
-                    <img  src="images/home/OrangePick.png" alt="Orange Pick">
+                    <img src="images/home/OrangePick.png" alt="Orange Pick">
                 </div>
-                <div class="secondSectionCard OrangePick">
+                <div class="secondSectionCard orangePick">
                     <h2 class="SecondSectionTitle">Electric Guitar</h2>
-                    <img  src="images/home/OrangePick.png" alt="Orange Pick">
+                    <img src="images/home/OrangePick.png" alt="Orange Pick">
                 </div>
                 <div class="secondSectionCard orangePick">
                     <h2 class="SecondSectionTitle">Bass Guitar</h2>
@@ -85,26 +84,16 @@
         </section>
 
         <!-- section 3 -->
+
         <section class="thirdSection">
             <h3 class="thirdSectionMainTitle">Most Popular</h3>
             <div class="thirdSectionContainer">
-                <div class="thirdSectionCard">
-                    <img class="thirdSectionCardimg" src="images/home/section3pic.png" alt="guitar">
-                    <h3 class="thirdSectionTitle">Guitar</h3>
-                    <div class="guitarReviews">
-                        <div class="sapp-guitar-card-review">
-                            <img class="reviewStars"  src="images/home/star.png" alt="stars">
-                            <span class="reviewText">4 reviews</span>
-                        </div>
-                        <span class="thirdSectionPrice">$ 950</span>
-                    </div>
-                </div>
 
                 <div class="thirdSectionCard">
-                    <img class="thirdSectionCardimg" src="images/home/section3pic.png" alt="guitar">
+                    <img class="guitar guitar-card" src="images/home/section3pic.png" alt="guitar">
                     <h3 class="thirdSectionTitle">Guitar</h3>
                     <div class="guitarReviews">
-                        <div class="app-guitar-card-reviews">
+                        <div class="starsReview">
                             <img class="reviewStars" src="images/home/star.png" alt="stars">
                             <span class="reviewText">4 reviews</span>
                         </div>
@@ -113,11 +102,11 @@
                 </div>
 
                 <div class="thirdSectionCard">
-                    <img class="thirdSectionCardimg" src="images/home/section3pic.png" alt="guitar">
+                    <img class="guitar guitar-card" src="images/home/section3pic.png" alt="guitar">
                     <h3 class="thirdSectionTitle">Guitar</h3>
                     <div class="guitarReviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="reviewStars"  src="images/home/star.png" alt="stars">
+                        <div class="starsReview">
+                            <img class="reviewStars" src="images/home/star.png" alt="stars">
                             <span class="reviewText">4 reviews</span>
                         </div>
                         <span class="thirdSectionPrice">$ 950</span>
@@ -125,10 +114,22 @@
                 </div>
 
                 <div class="thirdSectionCard">
-                    <img class="thirdSectionCardimg" src="images/home/section3pic.png" alt="guitar">
+                    <img class="guitar guitar-card" src="images/home/section3pic.png" alt="guitar">
                     <h3 class="thirdSectionTitle">Guitar</h3>
                     <div class="guitarReviews">
-                        <div class="app-guitar-card-reviews">
+                        <div class="starsReview">
+                            <img class="reviewStars" src="images/home/star.png" alt="stars">
+                            <span class="reviewText">4 reviews</span>
+                        </div>
+                        <span class="thirdSectionPrice">$ 950</span>
+                    </div>
+                </div>
+
+                <div class="thirdSectionCard">
+                    <img class="card-img" src="images/home/section3pic.png" alt="guitar">
+                    <h3 class="thirdSectionTitle">Guitar</h3>
+                    <div class="guitarReviews">
+                        <div class="starsReview">
                             <img class="reviewStars" src="images/home/star.png" alt="stars">
                             <span class="reviewText">4 reviews</span>
                         </div>
@@ -140,6 +141,7 @@
         </section>
 
         <!-- Forth Section -->
+
         <section class="forthSection">
             <h2 class="forthSectionTitle">JOIN OUR MAILING LIST</h2>
             <form class="forthSectionForm" name="subscribe">
@@ -147,8 +149,8 @@
                 <button class="forthSectionInputButton" type="submit">SUBSCRIBE</button>
             </form>
         </section>
+        <!-- Footer -->
 
-         <!-- Footer -->
         <footer>
             <div class="footerContainer">
                 <div class="footerDiv">
@@ -156,7 +158,7 @@
                         <h3 class="footerTitle">Brands</h3>
                     </div>
                     <nav>
-                        <ul class="app-footer-list">
+                        <ul class="footerItems">
                             <li><a href="" class="footerItemTitles">Fender</a></li>
                             <li><a href="" class="footerItemTitles">Gibson</a></li>
                             <li><a href="" class="footerItemTitles">Jockson</a></li>
@@ -169,7 +171,7 @@
                         <h3 class="footerTitle">Information</h3>
                     </div>
                     <nav>
-                        <ul class="app-footer-list">
+                        <ul class="footerItems">
                             <li><a href="" class="footerItemTitles">Blog</a></li>
                             <li><a href="" class="footerItemTitles">Delivery</a></li>
                             <li><a href="" class="footerItemTitles">About us</a></li>
@@ -202,8 +204,8 @@
                     </nav>
                 </div>
             </div>
-            <h5 class="footerCopyright"><img src="images/shared/Vector.svg" alt="copyright"><span>All right
-                    reserved.2025.</span></h5>
+            <h3 class="footerCopyright"><img src="images/shared/Vector.svg" alt="copyright"><span>All right
+                    reserved.2025.</span></h3>
         </footer>
 
     </div>

@@ -1,275 +1,286 @@
-<!-- flex 1 1 ???px -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/laptop.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1c228abca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" href="images/shared/logo.svg" type="image/x-icon" />
+    <title>Catalog</title>
 </head>
+
 <body>
     <!-- container -->
     <div class="container">
-               <!-- header -->
-               <header>
-                <nav class="headerNav">
-                    <ul class="headerList">
-                        <li><a href="index.html" class="headerListItem">Home</a></li>
-                        <li><a href="catalog.html" class="headerListItem">Catalog</a></li>
-                        <li><a href="contact.html" class="headerListItem">Contact Us</a></li>
-                    </ul>
-                </nav>
-    
-                <a class="menuIcon">
-                    <img src="images/shared/menu.svg" class="app-header-burgerIcon" alt="burger icon">
-                </a>
-                <a class="xLogo">
-                    <img src="images/shared/xmark.svg" class="app-header-xIcon" alt="x Icon">
-                </a>
-    
-                <a class="headerLogo">
-                    <img alt="logo" src="images/shared/logo.svg" class="logoHeader">
-                </a>
-    
-                <div class="headerDetails">
-                    <button>
-                        <img src="images/shared/search.svg" class="searchIcon" alt="search icon">
-                    </button>
-                    <button>
-                        <img src="images/shared/avatarLogo.svg" class="avatarIcon" alt="avatar icon">
-                    </button>
-                    <button>
-                        <img src="images/shared/cart.svg" class="cartIcon" alt="cart icon">
-                    </button>
-                </div>
-            </header>
-      
+        <!-- header -->
+        <header>
+            <nav class=" ">
+                <ul class="headerList">
+                    <li><a href="index.html" class="headerListItem">Home</a></li>
+                    <li><a href="catalog.html" class="headerListItem">Catalog</a></li>
+                    <li><a href="contact.html" class="headerListItem">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a class="menuIcon">
+                <img src="images/shared/menu.svg" class="app-header-burgerIcon" alt="burger icon">
+            </a>
+            <a class="xLogo">
+                <img src="images/shared/xmark.svg" class="app-header-xIcon" alt="x Icon">
+            </a>
+
+            <a href="index.html" class="headerLogo">
+                <img alt="logo" src="images/shared/logo.svg" class="logoHeader">
+            </a>
+
+            <div class="headerDetails">
+                <button>
+                    <img src="images/shared/search.svg" class="searchIcon" alt="search icon">
+                </button>
+                <button>
+                    <img src="images/shared/avatarLogo.svg" class="avatarIcon" alt="avatar icon">
+                </button>
+                <button>
+                    <img src="images/shared/cart.svg" class="cartIcon" alt="cart icon">
+                </button>
+            </div>
+        </header>
+
         <!-- section 1 -->
-        <div class="catalogSectionOne">
-            <a href=""><button class="catalogSectionOneButton">Classical</button></a>
-            <a href=""><button class="catalogSectionOneButton">Acoustic</button></a>
-            <a href=""><button class="catalogSectionOneButton active">Electric</button></a>
-            <a href=""><button class="catalogSectionOneButton">Bass</button></a>
+        <div class="catalogFirstSection">
+            <a href=""><button class="guitarTypes">Classical</button></a>
+            <a href=""><button class="guitarTypes">Acoustic</button></a>
+            <a href=""><button class="guitarTypes active">Electric</button></a>
+            <a href=""><button class="guitarTypes">Bass</button></a>
         </div>
+
         <!-- section 2 -->
-        <div class="app-catalog-section2">
-            <div class="app-catalog-section2-filter_sort">
-                <h3 class="app-catalog-section2-filter_sort-header">
-                    <span class="app-catalog-section2-filter_sort-header-text">Filter</span>
-                    <img class="app-catalog-section2-filter_sort-header-icon" alt="filter icon" src="images/catalog/filterIcon.svg">
-                </h3>
-                <div class="app-catalog-section2-sort">
-                    <h3 class="app-catalog-section2-filter_sort-header-text">Sort by:</h3>
-                    <button class="app-catalog-section2-sort-button">
-                        <span>Best selling</span>
-                        <img class="app-catalog-section2-sort-button-icon" alt="arrow down icon" src="images/catalog/arrowDown.svg">
+        <div class="catalogSecondSection">
+            <div class="catalogFilter ">
+                <div class="filterContainer ">
+                    <span class="filterText  filter">Filter</span>
+                    <button class="filterButton">
+                        <img src="images/catalog/filterIcon.svg" alt="filter">
                     </button>
                 </div>
+                <div class="catalogSort">
+                    <span class="filterText ">Sort by:</span>
+                    <button class="sortButton">
+                        <span>Best selling</span>
+                        <img src="images/catalog/arrowDown.svg" alt="down-arrow">
+                    </button>  
+                </div>
             </div>
-            <div class="app-catalog-section2-cards-container">
-                <div class="app-guitar-card app-guitar-card1">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar1.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+
+            <div class="catalogCardContainer">
+                <div class="card card1">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar1.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card2">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar2.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card2">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar2.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card3">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar3.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card3">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar3.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card4">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar4.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card4">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar4.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card5">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar5.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card5">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar5.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card6">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar6.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card6">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar6.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card7">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar7.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card7">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar7.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card8">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar8.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card8">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar8.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card9">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar9.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card9">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar9.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card10">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar10.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card10">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar10.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card11">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar11.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card11">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar11.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card12">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar12.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card12">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar12.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card13">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar13.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card13">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar13.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card14">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar14.png">
+                <div class="card card14">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar14.png">
                     <h6 class="thirdSectionTitle">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card15">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar15.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card15">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar15.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
-                <div class="app-guitar-card app-guitar-card16">
-                    <img alt="guitar" class="app-guitar-card-img" src="images/catalog/guitar16.png">
-                    <h6 class="app-guitar-card-header">lorem ipsum</h6>
-                    <div class="app-guitar-card-price_reviews">
-                        <div class="app-guitar-card-reviews">
-                            <img class="app-guitar-card-reviews-stars" alt="stars" src="images/catalog/stars.png">
-                            <span class="app-guitar-card-price_reviews-numb">4 reviews</span>
+                <div class="card card16">
+                    <img alt="guitar" class="card-img" src="images/catalog/guitar16.png">
+                    <h6 class="guitarName">lorem ipsum</h6>
+                    <div class="reviewStars">
+                        <div class="cardReviews">
+                            <img class="cardReviews-stars" alt="stars" src="images/catalog/stars.png">
+                            <span class="reviewStars">4 reviews</span>
                         </div>
-                        <span class="app-guitar-card-price">$ 950</span>
+                        <span class="price">$ 950</span>
                     </div>
                 </div>
             </div>
-            <div class="app-catalog-section2-pages">
-                <button class="app-catalog-section2-pages-previous app-catalog-section2-pages-button">
-                    <img class="app-catalog-section2-pages-previous-icon" alt="arrow left icon" src="images/catalog/arrowLeft.svg">
-                    <span class="app-catalog-section2-pages-button-text">Previous</span>
+                 <!--Pages -->
+            <div class="pages">
+                <button class="previous buttonPage">
+                    <img class="previousIcon" src="images/catalog/arrowLeft.svg"
+                    alt="arrow left icon">
+                    <span class="buttonText">Previous</span>
                 </button>
-                <span class="app-catalog-section2-pages-info">Page 1 of 5</span>
-                <button class="app-catalog-section2-pages-next app-catalog-section2-pages-button">
-                    <span class="app-catalog-section2-pages-button-text">Next</span>
-                    <img class="app-catalog-section2-pages-next-icon" alt="arrow right icon" src="images/catalog/arrowRight.svg">
+                <span class="pagesCount">Page 1 of 5</span>
+                <button class="next buttonPage">
+                    <span class="buttonText">Next</span>
+                    <img class="nextIcon" alt="arrow right icon" src="images/catalog/arrowRight.svg"
+                        alt="arrow right icon">
                 </button>
             </div>
+
         </div>
-       
-           <!-- Footer -->
-           <footer>
+
+        <!-- Footer -->
+        <footer>
             <div class="footerContainer">
                 <div class="footerDiv">
                     <div class="footerTitles">
                         <h3 class="footerTitle">Brands</h3>
                     </div>
                     <nav>
-                        <ul class="app-footer-list">
+                        <ul class="footerItems">
                             <li><a href="" class="footerItemTitles">Fender</a></li>
                             <li><a href="" class="footerItemTitles">Gibson</a></li>
                             <li><a href="" class="footerItemTitles">Jockson</a></li>
@@ -282,7 +293,7 @@
                         <h3 class="footerTitle">Information</h3>
                     </div>
                     <nav>
-                        <ul class="app-footer-list">
+                        <ul class="footerItems">
                             <li><a href="" class="footerItemTitles">Blog</a></li>
                             <li><a href="" class="footerItemTitles">Delivery</a></li>
                             <li><a href="" class="footerItemTitles">About us</a></li>
@@ -315,10 +326,11 @@
                     </nav>
                 </div>
             </div>
-            <h5 class="footerCopyright"><img src="images/shared/Vector.svg" alt="copyright"><span>All right
-                    reserved.2025.</span></h5>
+            <h3 class="footerCopyright"><img src="images/shared/Vector.svg" alt="copyright"><span>All right
+                    reserved.2025.</span></h3>
         </footer>
 
     </div>
 </body>
+
 </html>
