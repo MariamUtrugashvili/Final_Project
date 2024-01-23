@@ -155,7 +155,7 @@ header {
     background: #012426;
     display: flex;
     justify-content: center;
-    padding: 96px 98px;
+    padding-block: 96px;
 }
 
 .secondSectionContainer {
@@ -163,18 +163,21 @@ header {
     gap: 16px;
     width: 824px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 240px);
 }
 
 .secondSectionCard {
     background-size: cover;
     position: relative;
-    height: 240px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .secondSectionCard img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .secondSectionCard:hover img {
@@ -220,6 +223,7 @@ header {
 .thirdSectionContainer {
     display: flex;
     column-gap: 20px;
+    width: 100%;
 }
 
 
@@ -251,6 +255,12 @@ header {
     border-bottom: 2px solid #007bff;
 }
 
+.guitar {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
 
 .thirdSectionTitle {
     color: #D9D9D9;
@@ -276,6 +286,7 @@ header {
     font-weight: 400;
     line-height: 15px;
 }
+
 
 .starsReview {
     display: flex;
@@ -315,15 +326,18 @@ header {
 
 
 .forthSectionForm {
-    position: relative;
+    width: 480px;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #F5F5F5;
 }
 
 .forthSectionInput {
-    border-radius: 8px;
-    border: 1px solid #F5F5F5;
+    border-radius: 8px 0 0 8px;
+    border: none;
     background: rgba(44, 66, 70, 0.80);
     height: 48px;
-    width: 480px;
+    width: 100%;
     padding-left: 8px;
     color: #A1C3C9;
     font-family: 'Inter', sans-serif;
@@ -334,10 +348,8 @@ header {
 
 
 .forthSectionInputButton {
-    position: absolute;
     border-radius: 0px 8px 8px 0px;
     border: none;
-    right: 0;
     background: #05BCCA;
     padding: 15px 14px 14px 14px;
     color: #FFF;
@@ -543,6 +555,7 @@ footer {
 .catalogCardContainer .card {
     border: none;
     padding: 0 0 16px 0;
+    flex: 1 1 298px;
 }
 
 /* Catalog Card Hover Effect */
@@ -565,6 +578,12 @@ footer {
     gap: 40px 20px;
     justify-content: center;
     flex-flow: row wrap;
+}
+
+.card-img {
+    width: 100%;
+    height: 298px;
+    object-fit: cover;
 }
 
 .guitarName {

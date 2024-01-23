@@ -1,6 +1,6 @@
 let burger = document.querySelector(".menuIcon");
 let xmark = document.querySelector(".xLogo");
-let mobileMenu = document.querySelector(".headerList");
+let mobileMenu = document.querySelector(".headerNav");
 
 burger.addEventListener("click", () => {
   mobileMenu.classList.add("show");
