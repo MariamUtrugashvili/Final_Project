@@ -1,4 +1,6 @@
 @media (max-width: 800px) {
+
+    /* Contact */
     .contactContainer {
         padding: 48px 64px;
     }
@@ -6,6 +8,8 @@
 
 
 @media (max-width: 744px) {
+
+    /* Index */
     .FirstSection {
         height: 400px;
     }
@@ -17,24 +21,8 @@
 }
 
 @media (max-width: 600px) {
-    .footerContainer {
-        flex-direction: column;
-        row-gap: 40px;
-        align-items: center;
-        text-align: center;
-    }
 
-
-    .footerTitles::after {
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-
-    .contactLogos {
-        justify-content: center;
-    }
-
+    /* Catalog */
     .catalogFirstSection {
         padding: 16px 0;
     }
@@ -50,43 +38,42 @@
         padding: 32px 16px;
     }
 
-
-    .sortButton span, .filterText {
+    .sortButton span,
+    .filterText {
         display: none;
     }
 
+    /* Contact */
     .contactContainer {
         padding: 32px 40px;
     }
 
+    .contactLogos {
+        justify-content: center;
+    }
 
     .contactQuestion {
         font-size: 16px;
         line-height: 24px;
     }
 
-
     .inputFormContainer {
         flex-direction: column;
     }
 
-
     .hidden {
         display: none;
     }
-
 
     .infoContent {
         flex-direction: row;
         column-gap: 24px;
     }
 
-
     .destionation {
         width: 24px;
         height: 24px;
     }
-
 
     .info {
         padding: 16px 0;
@@ -94,15 +81,61 @@
         column-gap: 24px;
     }
 
-
     .contactPlaformsMiniIcons {
         justify-content: center;
     }
 
+    .contactPlaformsMiniIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .contactPlaformsMiniIcons a {
+        margin: 0 10px;
+    }
+
+    .contactPlaformsMiniIcons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .infoContent {
+        text-align: center;
+    }
+
+    .infoContentDetails {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .infoContentDetails i {
+        margin-right: 10px;
+    }
+
+    .mapLogo {
+        width: 37px;
+    }
+
+    /* Footer */
+    .footerContainer {
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .footerTitles::after {
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 @media (max-width: 500px) {
+
+    /* Index */
     .forthSection {
         height: 168px;
         padding-inline: 8px;
@@ -120,4 +153,3 @@
         line-height: 32px;
     }
 }
-

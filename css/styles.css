@@ -699,6 +699,7 @@ footer {
 .info {
     padding: 35px 40px;
     background: #2C4246;
+
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -880,18 +881,8 @@ footer {
 }
 
 /* Hover Effect for Input Fields */
-.inputField:hover {
-    background-color: #001F3F; 
-    color: #ffffff; 
-    border-color: #007BFF; 
-}
-/*  for Message  */
-.writingSpace:hover {
-    background-color: #001F3F; 
-    color: #ffffff; 
-    border-color: #007BFF; 
-}
-
+.inputField:hover,
+.writingSpace:hover,
 .info:hover {
     background-color: #001F3F; 
     color: #ffffff; 
@@ -901,3 +892,6 @@ footer {
 iframe {
     width: 100%;
 }
+
+
+
